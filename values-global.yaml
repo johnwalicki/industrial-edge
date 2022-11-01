@@ -10,24 +10,24 @@ global:
     installPlanApproval: Automatic
 
   imageregistry:
-    account: PLAINTEXT
-    hostname: quay.io
-    type: quay
+    account: iamapikey
+    hostname: us.icr.io
+    type: icr 
 
   git:
     hostname: github.com
-    account: PLAINTEXT
-    username: PLAINTEXT
-    email: SOMEWHERE@EXAMPLE.COM
+    account: johnwalicki
+    username: johnwalicki
+    email: johnwalicki@gmail.com
     dev_revision: main
 
   s3:
     bucket:
-      name: BUCKETNAME
-      region: AWSREGION
+      name: rh-industrial-edge
+      region: us-east
       message:
         aggregation:
           count: 50
       custom:
-        endpoint:
-          enabled: false
+        endpoint: s3.us-east.cloud-object-storage.appdomain.cloud
+          enabled: true

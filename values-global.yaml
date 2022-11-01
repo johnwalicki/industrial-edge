@@ -10,9 +10,9 @@ global:
     installPlanApproval: Automatic
 
   imageregistry:
-    account: iamapikey
-    hostname: us.icr.io
-    type: icr
+    account: walicki
+    hostname: quay.io
+    type: quay
 
   git:
     hostname: github.com
